@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{ 
+	list-style-type: none;
+}
+a{
+	text-decoration: none; color: #333;
+}
+.center{ 
+	position: relative;
+	margin-bottom: -1px;
+	width: 100%;
+	height: 600px;
+	background: #fedc57 url(img/resbg.png) no-repeat left bottom;
+	color: #333; 
+}
+.login{
+	position: absolute;
+    right: 45px;
+    box-sizing: border-box;
+    padding: 31px 35px;
+    width: 380px;
+    background: #fff;
+    margin-top: 70px;
+}
+.login h3{
+	width: 314px;
+    height: 45px;
+    color: #999;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 45px;
+}
+.lgn{
+	position: relative;
+    margin-top: 25px;
+    width: 314px;
+}
+.lgn li{
+	margin-bottom: 8px;
+    position: relative;
+}
+.lgn li input{
+	box-sizing: border-box;
+    padding-left: 30px;
+    width: 300px;
+    height: 40px;
+    outline: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    color: #999;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.lgn li i{
+	sposition: absolute;
+    font-size: 18px;
+    top: 14px;
+    left: 6px;
+    font-style: normal;
+}
+.lgn li label{
+	cursor: pointer;
+	text-align: left;
+    font-size: 12px;
+    color: #d22215;
+    margin-top: 5px;
+}
+.lgn li:nth-child(3) input{
+	width: 160px;
+    float: left;
+    margin-right: 20px;
+}
+.last span{
+	font-size: 26px;
+	width: 120px;
+    height: 40px;
+    border: 1px #EEEEEE solid;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.sure{
+	width: 314px;
+    height: 45px;
+    overflow: hidden;
+}
+.btn,.reg_btn{
+	background: rgb(200, 6, 6);
+	display: block;
+    width: 314px;
+    height: 45px;
+    border: 0;
+    border-radius: 6px;
+    background: #ed4242;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.reg-btn{
+	display: none;
+}
+.lgn p{
+	margin-top: 15px;
+	font-size: 14px;
+}
+.lgn p:nth-last-child(1) a{
+	color: #3388ff;
+}
+.lgn p:nth-last-child(1) a:nth-last-child(1){
+	margin-left: 105px;
+}

@@ -1,0 +1,85 @@
+*{ margin: 0; padding: 0; }
+ul,ol,li{ list-style-type: none; }
+a{ text-decoration: none; color: #333; }
+
+/*nav*/
+.nav { width: 1200px; height: 625px; margin: 0 auto; }
+.nav p:nth-child(1){ font-size: 12px; margin-top: 10px; }
+.nav-center{ width: 1200px; margin: 0 auto; margin-top: 20px; } 
+#box{ width: 460px; height: 540px; position:relative; float: left; }
+#mask{ z-index: 2; display:none; background-color: limegreen; width:270px; height:270px; background: #32CD32; opacity:0.25;  position:absolute; top:0; left:0; }
+#box ul{ width: 240px; margin: 5px auto; }
+#box li{ float: left; margin-left: 10px;}
+.small{ width: 460px; height: 460px; overflow: hidden; position: relative; cursor: move; border: 1px #ccc solid; }
+.small img{ position: absolute; width: 460px; height: 460px; top: 0; left: 0; }
+#bottom li{ width: 60px; height: 60px; margin-top: 5px; }
+#bottom li img{ width: 60px; height: 60px; }
+#big{ z-index: 10; display: none; width: 460px; height: 460px; border:1px solid #ccc; left: 470px; top: 0; overflow:hidden; position:absolute; }
+.bigImage{ position: absolute; top: 0; left: 0; }
+.layer{ border: 2px red solid; }
+
+.goods{ float: left; margin-left: 60px; width: 585px; font-size: 14px; }
+.goods-top span{ margin-bottom: 10px; background: #ed4242; color: white; border-radius: 3px; font-size: 12px; width: 45px; height: 20px; display: block; text-align: center; line-height: 20px; } 
+.goods-top h1{ font-size: 18px; margin-bottom: 20px; }
+.infor span{ margin-right: 45px; }
+.price{ margin-top: 15px; }
+.price span:nth-child(2){ font-size: 24px; color: #ed4242; padding: 0 8px 0 6px; font-weight: 600; }
+/*.goods dt{ float: left; margin-right: 10px; }
+.goods form{ margin-bottom: 26px; color: #333; margin-top: 20px; }
+.goods form input{ width: 45px; height: 30px; float: left; line-height: 30px; text-align: center; }
+.goods form p{ float: left; }
+.goods form p span{ line-height:13px; text-align: center; display: block; width: 18px; height: 13px; border: 1px solid #aaa; margin-bottom: 2px; margin-left: 3px; color: #bbb; }*/
+.shop{ position: relative; }
+.shop p:nth-child(1){ color: #616161; font-size: 14px; line-height: 2; margin-bottom: 10px; }
+.shop span:nth-child(2){ margin-left: 60px; }
+.shop span a:nth-child(1){ margin-right: 15px; border: 1px solid #ed4242; background: #ffebeb; color: #ff6600; font-size: 16px; }
+.shop span a:nth-child(2){ border: 1px solid #ed4242; background: #ed4242; color: #fff; font-size: 16px; }
+.shop span a{ display: inline-block; text-align:center; width: 178px; height: 44px; line-height: 44px; font-size: 16px; }
+.success{ display: none; position: absolute; z-index: 8; margin-bottom: -46px; bottom: 0; left: 0; border: solid 1px #e65050; background: #fff; width: 378px; box-shadow: 2px 2px 4px #e3e3e3; }
+.success p:nth-child(1){ padding: 2% 6%; line-height: 3em; font-size: 1.2em; }
+.success p:nth-child(2) a:nth-child(2){ background: #ed4242; border: 1px solid #ed4242; color: #fff; text-align: center; display: inline-block; padding: 0 10px; height: auto; width: auto; border-radius: 3px; float: none; font-size: 14px; margin-right: 20px; line-height: 2; }
+.success p:nth-child(2) a:nth-child(3){ padding: 0 10px; height: auto; width: auto; border-radius: 3px; float: none; font-size: 14px; margin-right: 20px; line-height: 2;    background: #ffebeb; border: 1px solid #ed4242; color: #ff6600; text-align: center; text-decoration: none; vertical-align: baseline;}
+
+/*main*/
+.main{ width: 1200px; margin: 0 auto; height: 7800px; }
+.main-top{ width: 1200px; height: 50px; margin: 0 auto; border-bottom: 2px solid #ed4242; }
+.main-top dt{ width: 68px; height: 50px; float: left; }
+.main-top dt img{ width: 37px; height: 40px; margin: 10px 15px; }
+.main-top dd{ float: left; font-size: 9px; margin-top: 10px; }
+.main-top dd p:nth-child(2){ color: #ed4242; font-size: 14px; }
+.main-top ul{ width: 355px; margin: 0 auto; }
+.main-top li{ cursor: pointer; float: left; height: 50px; width: 170px; text-align: center; line-height: 50px; font-size: 18px; }
+.current{ color: #ed4242; }
+.active{ position: fixed; left: 0; top: 0; background: rgba(255,255,255,.9);width: 100%; }
+
+.main-left { width: 170px; margin: 0 10px; float: left; }
+.main-left h1,.main-right h1{ width: 170px; height: 35px; line-height: 35px; text-align: center; font-size: 14px; border-bottom: 1px solid #ddd; }
+.main-left li{ width: 170px; border-bottom: 1px solid #ddd; }
+.main-left li a{ display: block; font-size: 14px; height: 35px; line-height: 35px; text-align: center; }
+.main-center{ width: 800px; float: left; }
+.main-center li{ width: 800px; overflow: hidden; }
+#first p{ width: 770px; margin: 0 auto 10px; border-bottom: 1px dashed #eee; height: 30px; }
+.comment{ width: 720px; padding: 20px 40px; }
+.comment p{ color: #333; font-size: 12px; }
+.comment h4{ font-weight: 600; font-size: 16px; line-height: 2.2; }
+.comment span{ color: red; font-size: 20px; }
+.comment i{ font-size: 12px; color: #333; font-style: normal; margin-right: 5px; }
+.comment p em{ font-style: normal; font-size: 12px; }
+.person{ margin-top: 20px; }
+.person dt{ padding: 1.5% 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background: #f9f9f9; }
+.person dt span{ width: 20%; display: inline-block; text-align: center; font-weight: 500; font-size: 1.2em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.person p{ padding: 1.2% 0; text-align: center; color: #fff; background: #adadad; width: 800px; }
+
+.main-right{ width: 190px; float: left; font-size: 12px; margin: 0 10px; }
+.main-right h1{ margin: 0 10px; }
+.main-right ul{ width: 190px; margin: 0 auto; }
+.main-right li{ border-bottom: 1px solid #ddd; }
+.main-right p:nth-child(1){ width: 190px; height: 175px; padding-right: 10px; margin-top: 15px; }
+.main-right dl{ height: 90px; }
+.main-right dt{ float: left; margin-top: 35px; }
+.main-right dt p{ color: #ed4242; font-size: 14px; margin-top: 10px; }
+.main-right dd{ float: right; margin-top: 35px; }
+.main-right dd p{ color: #bbb; margin: 5px 0; }
+.main-right img{ width: 190px; }
+.main-right dd img{ width: 18px; height: 13px; }
+/*195,285*/
