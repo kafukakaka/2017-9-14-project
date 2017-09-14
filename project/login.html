@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="homePage.css" />
+		<link rel="stylesheet" type="text/css" href="font_1l542s6ty7ig4x6r/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="public.css" />
+		<link rel="stylesheet" type="text/css" href="login.css" />
+	</head>
+	<body>
+		<div class="tishi" style="display: none;"></div>
+		<div class="header-wrap"></div>
+		<div class="center">
+			<div class="login">
+	            <h3>账号登录</h3>
+	            <!-- 账号登录 -->
+	            <div class="lgn">
+	                <ul>
+	                    <li>
+	                        <input name="loginName" type="text" placeholder="邮箱 / ID / 手机号" id="uname">
+	                        <i class="iconfont"></i>
+	                    </li>
+	                    <li>
+	                        <input name="pwdOriginal_login" type="password" placeholder="密码" id="upwd">
+	                        <i class="iconfont"></i>
+	                        <label style="display: none">* 请填写您的邮箱/ID</label>
+	                    </li>
+	                    <li class="last">
+	                        <input type="text" placeholder="验证码" id="yanzheng">      
+	                        <span id="sure">4567</span>
+	                        <label></label>
+	                    </li>
+	                    <p class="sure">
+	                    	<input name="login_submit" type="button" value="登录" class="btn" id="btn">
+	                    	<input name="login_submit" type="button" class="reg_btn" value="处理中...">
+	                    </p>
+	                     <p>不是会员？
+	                        <a href="http://127.0.0.1/project/register.html">马上注册</a>
+	                        <a href="">忘记密码</a>
+	                    </p>
+	                </ul>
+	            </div>
+	        </div>
+		</div>
+		<div class="footer-wrap"></div>
+	</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="login.js"></script>
+<script>
+	$(".header-wrap").load("public.html .header",function(){
+		//显示和隐藏
+		$("#country,#money,#self,#life,#world,#about").mouseenter(function(){
+			$(this).children("ol").show();
+		})
+		$("#country,#money,#self,#life,#world,#about").mouseleave(function(){
+			$(this).children("ol").hide();
+		})
+		$(".header-bl").mouseenter(function(){
+			$(".header-bl ul").show();
+		})
+		$(".header-bl").mouseleave(function(){
+			$(".header-bl ul").hide();
+		})
+		//全部分类
+		$(".header-bl ul").on("mouseenter","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .show()
+							  .siblings()
+							  .hide();
+		})
+		$(".header-bl ul").on("mouseleave","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .hide();
+		})
+		//列表点击
+		$("#country ol").on("click","li",function(){
+			$("#country span").eq(0)
+				   			  .html($(this).find("span").html());
+		})
+		$("#money ol").on("click","li",function(){
+			$("#money a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+		$("#self ol").on("click","li",function(){
+			$("#self a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+	});
+	$(".footer-wrap").load("public.html .footer");
+</script>

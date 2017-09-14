@@ -1,0 +1,33 @@
+{
+	"classify001":{
+		"name" : "新品上架",
+		"type" : [
+			{ "id" : "type01", "name" : "牛奶" },
+			{ "id" : "type02", "name" : "葡萄酒" },
+			{ "id" : "type03", "name" : "特产" },
+			{ "id" : "type04", "name" : "大米" },
+			{ "id" : "type05", "name" : "食用油" },
+			{ "id" : "type06", "name" : "咖啡" },
+			{ "id" : "type07", "name" : "茗茶" },
+			{ "id" : "type08", "name" : "饮用水" }
+		],
+		"other" : "更多",
+		"cl" :[
+			{ "src" : "carel.jpg"  },
+			{ "id" : "cl01", "name" : "休闲食品" },
+			{ "id" : "cl02", "name" : "进口食品" },
+			{ "id" : "cl03", "name" : "粮油米面" },
+			{ "id" : "cl04", "name" : "中外米酒" },
+			{ "id" : "cl05", "name" : "地方特产" },
+			{ "id" : "cl06", "name" : "茶叶" },
+			{ "id" : "cl07", "name" : "生鲜果蔬" }	
+		],
+		"cc" : [
+			{ "id" : "cc01", "src" : "lunbo1.jpg" },
+			{ "id" : "cc01", "src" : "lunbo2.jpg" },
+			{ "id" : "cc01", "src" : "lunbo3.jpg" },
+			{ "id" : "cc01", "src" : "lunbo4.jpg" },
+			{ "id" : "cc01", "src" : "lunbo5.jpg" }
+		]
+	}
+}

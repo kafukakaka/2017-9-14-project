@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="font_1l542s6ty7ig4x6r/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="public.css" />
+	<link rel="stylesheet" type="text/css" href="list.css" />
+	<body>
+		<div class="tishi"></div>
+		<div class="header-wrap"></div>
+		<div class="nav">
+			<ul class="nu">
+				<li><a href=""><img src="img/list1.png"/></a></li>
+				<li><a href=""><img src="img/list2.png"/></a></li>
+				<li><a href=""><img src="img/list3.png"/></a></li>
+				<li><a href=""><img src="img/list4.png"/></a></li>
+				<li><a href=""><img src="img/list5.png"/></a></li>
+				<li><a href=""><img src="img/list7.png"/></a></li>
+				<li><a href=""><img src="img/list8.png"/></a></li>
+				<li><a href=""><img src="img/tlb8.png"/></a></li>
+			</ul>
+			<ol class="no">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>				
+			</ol>
+			<span class="navLeft"><</span>
+			<span class="navRight">></span>
+		</div>
+		<div class="list">
+			<div class="list_top">
+				<div class="choose">
+					<span>商品分类</span>
+					<ul id="big">
+						<li>
+							<a href="javascript:;">- 全部  -</a>
+							<ul>
+								<li><a href="">- 全部  -</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href="">营养保健</a></li>
+								<li><a href="">美妆个护</a></li>
+								<li><a href="">运动户外</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href="">营养保健</a></li>
+								<li><a href="">美妆个护</a></li>
+								<li><a href="">运动户外</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href="">营养保健</a></li>
+								<li><a href="">美妆个护</a></li>
+								<li><a href="">运动户外</a></li>
+								<li><a href="">母婴用品</a></li>
+								<li><a href="">营养保健</a></li>
+								<li><a href="">美妆个护</a></li>
+								<li><a href="">运动户外</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<p>新品上市</p>
+			</div>
+			<div class="list_bottom">
+				<ul>
+					<!--<li>
+						<p><a href=""><img src="img/list.png"/></a></p>
+						<dl>
+							<dt>
+								<a href="">【促销 买2套送1套】...</a>
+								<p>¥186.26</p>
+							</dt>
+							<dd>
+								<img src="img/country7.jpg" />
+								<p>日本</p>
+							</dd>
+						</dl>
+					</li>-->
+				</ul>
+			</div>
+			<div id="box">
+				<ul id="u">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-wrap"></div>
+	</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="list.js"></script>
+<script src="homePage.js"></script>
+<script>
+	$(".header-wrap").load("public.html .header",function(){
+		//显示和隐藏
+		$("#country,#money,#self,#life,#world,#about").mouseenter(function(){
+			$(this).children("ol").show();
+		})
+		$("#country,#money,#self,#life,#world,#about").mouseleave(function(){
+			$(this).children("ol").hide();
+		})
+		$(".header-bl").mouseenter(function(){
+			$(".header-bl ul").show();
+		})
+		$(".header-bl").mouseleave(function(){
+			$(".header-bl ul").hide();
+		})
+		//全部分类
+		$(".header-bl ul").on("mouseenter","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .show()
+							  .siblings()
+							  .hide();
+		})
+		$(".header-bl ul").on("mouseleave","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .hide();
+		})
+		//列表点击
+		$("#country ol").on("click","li",function(){
+			$("#country span").eq(0)
+				   			  .html($(this).find("span").html());
+		})
+		$("#money ol").on("click","li",function(){
+			$("#money a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+		$("#self ol").on("click","li",function(){
+			$("#self a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+		$("#big ul").on("click","li",function(){
+			$("#big li").eq(0)
+				   		.html($(this).find("a").html());
+		})
+
+	});
+	$(".footer-wrap").load("public.html .footer");
+</script>

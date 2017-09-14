@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="homePage.css" />
+		<link rel="stylesheet" type="text/css" href="font_1l542s6ty7ig4x6r/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="public.css" />
+		<link rel="stylesheet" type="text/css" href="cart.css" />
+	</head>
+	<body>
+		<div class="tishi" style="display: none;"></div>
+		<div class="header-wrap"></div>
+		<div class="center">
+			<div class="title">
+				<span>全部商品</span>
+				<span id="num">1</span>
+				<ul>
+					<li><input id="selectAll1" type="checkbox"/>全选</li>
+					<li>商品名称</li>
+					<li>属性</li>
+					<li>单价</li>
+					<li>数量</li>
+					<li>小计</li>
+					<li>操作</li>
+				</ul>
+			</div>
+			<div class="big_shop">
+				<div class="shop1">
+					<!--
+						'<div class="shop-item clearfix">'+
+							'<p class="fl checkfl"><input type="checkbox" class="ck"/></p>'+
+							'<p class="fl">'+'<img class="fl" src="img/'+ shopinfo.src +'" alt="" />'+ shopinfo.name +'</p>'+
+							'<span class="fl">'+ shopinfo.price +'元</span>'+
+							'<p class="fl count" '+
+								'data-id="'+ shopinfo.id +'" '+
+								'data-price="'+ shopinfo.price +'" data-count="'+ shopinfo.count +'"'+
+								'data-name="'+ shopinfo.name +'" data-src="'+ shopinfo.src +'"'+
+								'>'+
+								'<span class="updateCount" data-number="1">+</span>'+
+								'<span class="shop-count">'+ shopinfo.count +'</span>'+
+								'<span class="updateCount" data-number="-1">-</span>'+
+							'</p>'+
+							'<em class="fl sumPrice">'+ (shopinfo.count * shopinfo.price) +'元</em>'+
+							'<i class="fl delBtn">删除</i>'+
+						'</div>';
+					-->	
+				</div>
+				<div class="col-1">
+                    <div class="col-2">
+                    	<span><input id="selectAll2" type="checkbox" value="">全选</span>
+                    	<span><a href="javascript:;" class="remove_checked">删除选中的商品</a></span>
+                    </div>
+                   	<div class="col-3">
+                   		<p>删除选中的商品？</p>
+                   		<span id="yes"><a href="javascript:;">确定</a></span>
+                   		<span id="no"><a href="javascript:;">取消</a></span>                   		
+                   	</div>
+                </div>
+				<div id="sum" class="clearfix">
+					<p>共<span class="count2"> 0 </span>件商品，总价(不含运费) : </p>
+					<p>￥<span class="money2">0</span></p>
+					<p><a href="javascript:;" class="btn">立即结算</a></p>
+					<p><a href="http://127.0.0.1/project/login.html" class="currant">立即结算</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-wrap"></div>
+		<div class="layer"></div>
+	</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="myCookie.js"></script>
+<script src="cart.js"></script>
+<script>
+	$(".header-wrap").load("public.html .header",function(){
+		//显示和隐藏
+		$("#country,#money,#self,#life,#world,#about").mouseenter(function(){
+			$(this).children("ol").show();
+		})
+		$("#country,#money,#self,#life,#world,#about").mouseleave(function(){
+			$(this).children("ol").hide();
+		})
+		$(".header-bl").mouseenter(function(){
+			$(".header-bl ul").show();
+		})
+		$(".header-bl").mouseleave(function(){
+			$(".header-bl ul").hide();
+		})
+		//全部分类
+		$(".header-bl ul").on("mouseenter","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .show()
+							  .siblings()
+							  .hide();
+		})
+		$(".header-bl ul").on("mouseleave","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .hide();
+		})
+		//列表点击
+		$("#country ol").on("click","li",function(){
+			$("#country span").eq(0)
+				   			  .html($(this).find("span").html());
+		})
+		$("#money ol").on("click","li",function(){
+			$("#money a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+		$("#self ol").on("click","li",function(){
+			$("#self a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+	});
+	$(".footer-wrap").load("public.html .footer");
+</script>

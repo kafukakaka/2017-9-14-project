@@ -1,0 +1,107 @@
+*{ margin: 0; padding: 0; }
+ul,ol,li{ list-style-type: none; }
+a{ text-decoration: none; color: #333; }
+
+
+/*nav*/
+.nav{ height:450px; width: 1280px; overflow: hidden; position: relative; }
+.nav ul{ position: relative; }
+.nav ul li{ display: none; background:rgba(233,238,155,.8); position: absolute; top: 0; left: 0; width: 1280px; height: 450px; }
+.nav ul li:nth-child(1){ display: block; }
+.nav ol{ height:21px; width:130px; position: absolute; right: 480px; bottom: 10px; width: 320px; }
+.nav ol li{ cursor: pointer; display: none; background:rgba(255,255,255,.8); float: left; width: 21px; height: 21px; margin: 0 5px; text-align: center; border-radius: 50%; font-size:9px; line-height: 21px; }
+.nav ol li.active{ background: rgba(0,0,0,0.8); font-size:9px; color: white; }
+.nav span:nth-last-child(2){ color: white; cursor: pointer; position: absolute; top: 200px; left: 35px; display: none; width: 50px; height: 50px; line-height: 50px; text-align: center; border-radius: 50%; background: rgba(0,0,0,0.4); font-size: 36px; }
+.nav span:nth-last-child(1){ color: white; cursor: pointer; position: absolute; top: 200px; right: 55px; display: none; width: 50px; height: 50px; line-height: 50px; text-align: center; border-radius: 50%; background: rgba(0,0,0,0.4); font-size: 36px; }
+/*banner*/
+.banner{ width: 1280px; height: 1730px; }
+.banner-new{ width: 1200px; height: 915px; margin: 0 32px; }
+.banner-nt{ width: 1200px; height: 60px; padding-top: 70px; text-align: center; line-height: 60px; }
+.banner-new b{ font-size: 26px; font-weight: normal; padding-right: 10px; }
+.banner-new em{ font-size: 14px; color: #bbb; padding-left: 10px; font-style: normal; }
+.banner-new a { font-size: 14px; vertical-align: baseline; float: right; color: #aaa; }
+
+.banner-nb{ overflow: hidden; height: 783px; border-bottom: 1px solid #ddd; width: 1195px; position: relative; border-right: 1px solid #ddd; }
+.new{ width: 6000px; height: 783px; }
+.new ul{ height: 783px; width: 1200px; float: left; }
+.new li{ height: 783px; float: left; width: 1200px; }
+.new li a{position: relative;}
+#box{ position: absolute; top: 345px; left: 0; width: 1195px; height: 45px; font-size: 45px; }
+#box span:nth-child(1){float: left; display: none; cursor: pointer; }
+#box span:nth-child(2){float: right; display: none;cursor: pointer; }
+.banner-nb dl{ overflow:hidden; float: right; width: 238px; height: 260px; border-left: solid #DDDDDD 1px; border-top: solid #DDDDDD 1px ; }
+.banner-nb dt img{ height: 170px; width: 230px; }
+.banner-nb dd{ position: absolute; bottom:-27px ; left: 0; background: rgba(255,255,255,0.5); height: 110px;}
+.banner-nb dd p{ width: 200px; text-align: center; margin: 5px 19px; color: black; margin-bottom: 10px; }
+.banner-nb dd p:nth-child(2){ color: red; font-size: 20px; }
+.banner-nb dd p:nth-child(3){ color: #aaa; font-size: 12px; }
+.banner-nb dd p:nth-child(3) img{ width: 16px; height: 10px; margin-left: 10px; }
+
+
+.banner-hot{ width: 1200px; height: 820px; margin: 0 32px; text-align: center; margin-top: 45px; }
+.banner-ht{ width: 1200px; height: 60px; text-align: center; line-height: 60px; }
+.banner-hot b{ font-size: 26px; font-weight: normal; padding-right: 10px; }
+.banner-hot em{ font-size: 14px; color: #bbb; padding-left: 10px; font-style: normal; }
+.banner-hot a { font-size: 14px; vertical-align: baseline; float: right; color: #aaa; }
+.banner-hot dl{ float: left; width: 395px; height: 175px; border-left: solid #DDDDDD 1px; border-top: solid #DDDDDD 1px; }
+.banner-hot .three{ border-right: solid #DDDDDD 1px; }
+.banner-hot .last{ border-bottom: solid #DDDDDD 1px; }
+.banner-hb dt{ width:170px; height: 175px; float: left; }
+.banner-hb dd{ float: left; text-align: left; }
+.banner-hb dd p:nth-child(1){ color: black; width: 200px; height: 65px; margin-top: 20px; }
+.banner-hb dd p:nth-child(2){ color: red; font-size: 20px; width: 85px; height: 35px; }
+.banner-hb dd p:nth-child(3){ color: #aaa; font-size: 12px; width: 70px; height: 25px; }
+.banner-hb dd p:nth-child(3) img{ width: 16px; height: 10px; margin-left: 10px; }
+/*1200,780+130+720+100*/
+
+/*shop*/
+.shop{ width: 1200px; height: 550px; margin: 0 auto; overflow: hidden; position: relative; }
+.shopTop{ width: 1200px; height: 50px; text-align: center; line-height: 60px; margin-top: 50px; }
+.shopTop b{ font-size: 26px; font-weight: normal; padding-right: 10px; }
+.shopTop em{ font-size: 14px; color: #bbb; padding-left: 10px; font-style: normal; } 
+.shop ul{ width: 1200px; height: 400px; }
+.shop li{ float:right; width: 158px; height: 158px; border-radius: 50%; margin: 37px 115px; }
+.shop li:nth-child(4){ position: absolute; left: 37px; top:330px; }
+.shop li:nth-child(5){ position: absolute; left: 427px; top:330px; }
+.shop li:nth-child(6){ position: absolute; left: 815px; top:330px; }
+/*main*/
+.main{ width: 1280px; margin: 0 auto; }
+.water{ height: 1270px; }
+.waterTop { margin:15px auto; width: 1200px; height: 80px; }
+.waterTop h1{ width: 1200px; height: 45px; line-height: 45px; text-align: center; font-weight: normal; font-size: 26px; }
+.waterTop p{ width: 1150px; height: 35px; line-height: 35px; text-align: center; font-size: 14px; float: left;}
+.waterTop p a{ margin: 0 17px; font-size: 12px; }
+.waterTop span{ font-size: 12px; vertical-align: baseline; float: right; height: 35px; line-height: 35px; text-align: center; }
+
+.waterCenter{ width: 1200px; height: 350px; margin: 0 auto; }
+.waterCl{ width: 239px; height: 350px; float: left; border: 1px solid #ccc;}
+.waterCl ul{ width: 220px; padding: 10px; }
+.waterCl ul li{ width: 50%; float: left; padding-bottom: 20px; }
+.waterCl ul li a { font-size: 12px; padding-left: 10px; }
+.waterCc1,.waterCc2,.waterCc3,.waterCc4,.waterCc5,.waterCc6,.waterCc7{ z-index: 1; float: left; height: 350px; width: 718px; overflow: hidden; position: relative; border-top: 1px solid #ccc ;border-bottom: 1px solid #ccc ;}
+.waterCc1 ul,.waterCc2 ul,.waterCc3 ul,.waterCc4 ul,.waterCc5 ul,.waterCc6 ul,.waterCc7 ul{ width: 3000px;height: 350px;}
+.waterCc1 ul li,.waterCc2 ul li,.waterCc3 ul li,.waterCc4 ul li,.waterCc5 ul li,.waterCc6 ul li,.waterCc7 ul li{ list-style: none; float: left; }
+.waterCc1 ol,.waterCc2 ol,.waterCc3 ol,.waterCc4 ol,.waterCc5 ol,.waterCc6 ol,.waterCc7 ol{ display: none; position: absolute; right: 300px; bottom: 10px; width: 170px; height: 12px; }
+.waterCc1 ol li,.waterCc2 ol li,.waterCc3 ol li,.waterCc4 ol li,.waterCc5 ol li,.waterCc6 ol li,.waterCc7 ol li{ border:1px solid #aaa;background: white; float: left; width: 11px; height: 11px; margin: 0 10px; border-radius: 50%; }
+.waterCc1 ol li.current,.waterCc2 ol li.current,.waterCc3 ol li.current,.waterCc4 ol li.current,.waterCc5 ol li.current,.waterCc6 ol li.current,.waterCc7 ol li.current{ background: red; }
+.waterCr1,.waterCr2,.waterCr3,.waterCr4,.waterCr5,.waterCr6,.waterCr7{ width: 239px; height: 350px; border: 1px solid #ccc; float: right; position: relative; }
+.waterCr1 ul,.waterCr2 ul,.waterCr3 ul,.waterCr4 ul,.waterCr5 ul,.waterCr6 ul,.waterCr7 ul{ height: 310px; overflow: hidden; }
+.waterCr1 ul li,.waterCr2 ul li,.waterCr3 ul li,.waterCr4 ul li,.waterCr5 ul li,.waterCr6 ul li,.waterCr7 ul li{ float: left; margin-left: 20px; }
+.waterCr1 ul li a,.waterCr2 ul li a,.waterCr3 ul li a,.waterCr4 ul li a,.waterCr5 ul li a,.waterCr6 ul li a,.waterCr7 ul li a{ width: 200px; height: 75px; display: block; border-bottom: dashed 1px #eee; } 
+.waterCr1 ul li a img,.waterCr2 ul li a img,.waterCr3 ul li a img,.waterCr4 ul li a img,.waterCr5 ul li a img,.waterCr6 ul li a img,.waterCr7 ul li a img{ padding: 10px 45px; }
+.waterCr1 ol,.waterCr2 ol,.waterCr3 ol,.waterCr4 ol,.waterCr5 ol,.waterCr6 ol,.waterCr7 ol{ display: none; position: absolute; right: 80px; bottom: 10px; width: 90px; height: 12px; }
+.waterCr1 ol li,.waterCr2 ol li,.waterCr3 ol li,.waterCr4 ol li,.waterCr5 ol li,.waterCr6 ol li,.waterCr7 ol li{ border:1px solid #aaa;background: white; float: left; width: 11px; height: 11px; margin: 0 8px; border-radius: 50%; }
+.waterCr1 ol li.current,.waterCr2 ol li.current,.waterCr3 ol li.current,.waterCr4 ol li.current,.waterCr5 ol li.current,.waterCr6 ol li.current,.waterCr7 ol li.current{ background: red; }
+
+.waterBottom{ overflow: hidden; width: 1200px; margin: 0 auto; border-right: 1px solid #ddd; height: 783px; }
+.waterBottom dl{ position: relative; overflow:hidden; float: left; width: 238px; height: 260px; border-left: solid #DDDDDD 1px; border-bottom: solid #DDDDDD 1px; }
+.waterBottom dd{ position: absolute; bottom:-27px ; left: 0; background: rgba(255,255,255,0.5); height: 110px;}
+.waterBottom dd p{ width: 200px; text-align: center; margin: 5px 19px; color: black; margin-bottom: 10px; font-size: 14px; }
+.waterBottom dd p:nth-child(2){ color: red; font-size: 20px; }
+.waterBottom dd p:nth-child(3){ color: #aaa; font-size: 12px; }
+.waterBottom dd p:nth-child(3) img{ width: 16px; height: 10px; margin-left: 10px; }
+.waterBottom dt img{ height: 170px; width: 230px; }
+.waterBottom dt{ height: 185px; }
+
+
+

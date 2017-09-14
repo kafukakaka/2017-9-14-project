@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="homePage.css" />
+		<link rel="stylesheet" type="text/css" href="font_1l542s6ty7ig4x6r/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="public.css" />
+		<link rel="stylesheet" type="text/css" href="register.css" />
+	</head>
+	<body>
+		<div class="tishi" style="display: none;"></div>
+		<div class="header-wrap"></div>
+		<div class="center">
+			<div class="register">
+				<nav>
+			        <ul>
+			            <li class="active"><a href="javascript:;">邮箱注册</a></li>
+			            <li><a href="javascript:;">手机号码注册</a></li>
+			        </ul>
+			    </nav>
+			    <!--邮箱注册-->
+			    <div class="email">
+			        <form method="POST" onsubmit="return checkForm();">
+			        	<ul>
+							<li>
+			                    <input id="email" name="email" type="text" placeholder="电子邮箱"><!-- 电子邮箱 -->
+			                    <span class="msg"><img src="img/msg.png"></span>
+			                    <p id="eNsg1"></p>
+			                </li>
+			                <li>
+			                    <input id="email_pwd" name="email_pwd" type="password" maxlength="18" placeholder="请输入密码">
+			                    <span class="msg"><img src="img/msg.png"></span>
+			                    <p id="ePsg1"></p>
+			                </li>                
+			                <li>
+			                    <input id="email_pwd_again" name="email_pwd_again" type="password" maxlength="18" placeholder="请再次输入密码">
+			                    <span><img src="img/msg.png"></span>
+			                    <p id="eAsg1"></p>
+			                </li>            
+			                <li>
+			                    <input name="email_disclaimer" checked="" type="checkbox" class="tps_checkbox">
+			                    <p>我同意<a href="" class="agree">《TPS用户注册协议》</a></p>	                       
+			                </li>
+			                <!-- 注册内容提交 按钮 -->
+			                <input type="button" value="同意协议并注册" id="email_btn">
+			                <p class="font">已有账号？<a href="http://127.0.0.1/project/login.html">去登录</a></p>
+						</ul>   
+			        </form> 
+				</div>
+				<!--手机号码注册-->
+	            <div class="commit">
+	                <form method="POST" onsubmit="return checkForm">
+	                    <ul>
+	                        <li>
+	                            <input id="mobile" name="mobile" type="text" placeholder="请输入手机号码(仅限中国大陆手机)">
+	                            <span class="msg"><img src="img/msg.png"></span>
+	                            <p id="eNsg2"></p>
+	                        </li>
+	                        <li>
+	                            <input id="mobile_pwd" name="mobile_pwd" type="password" placeholder="请输入密码">
+	                            <span class="msg"><img src="img/msg.png"></span>
+	                            <p id="ePsg2"></p>
+	                        </li>
+	                        <li>
+	                            <input id="mobile_pwd_again" name="mobile_pwd_again" type="password" placeholder="请再次输入密码">
+	                            <span class="msg"><img src="img/msg.png"></span>
+	                            <p id="eAsg2"></p>
+	                        </li>
+	                        <li>
+	                            <input name="mobile_disclaimer" checked="" type="checkbox">
+	                            <p>我同意<a href="" class="agree">《TPS用户注册协议》</a></p>
+	                        </li>
+	                        <input type="button" value="同意协议并注册" id="mobile_btn">
+	                        <p class="font">已有账号？<a href="http://127.0.0.1/project/login.html">去登录</a></p>
+	                    </ul>
+	                </form>
+	            </div>
+            </div>               
+        </div>
+		<div class="footer-wrap"></div>
+	</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="register.js"></script>
+<script>
+	$(".header-wrap").load("public.html .header",function(){
+		//显示和隐藏
+		$("#country,#money,#self,#life,#world,#about").mouseenter(function(){
+			$(this).children("ol").show();
+		})
+		$("#country,#money,#self,#life,#world,#about").mouseleave(function(){
+			$(this).children("ol").hide();
+		})
+		$(".header-bl").mouseenter(function(){
+			$(".header-bl ul").show();
+		})
+		$(".header-bl").mouseleave(function(){
+			$(".header-bl ul").hide();
+		})
+		//全部分类
+		$(".header-bl ul").on("mouseenter","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .show()
+							  .siblings()
+							  .hide();
+		})
+		$(".header-bl ul").on("mouseleave","li",function(){
+			index_h = $(this).index();
+			$(".header-bl ul").find("p")
+							  .eq(index_h)
+							  .hide();
+		})
+		//列表点击
+		$("#country ol").on("click","li",function(){
+			$("#country span").eq(0)
+				   			  .html($(this).find("span").html());
+		})
+		$("#money ol").on("click","li",function(){
+			$("#money a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+		$("#self ol").on("click","li",function(){
+			$("#self a").eq(0)
+				   		 .html($(this).find("a").html());
+		})
+	});
+	$(".footer-wrap").load("public.html .footer");
+</script>
